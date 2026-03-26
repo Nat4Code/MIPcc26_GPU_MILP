@@ -1,0 +1,40 @@
+{
+  "global": {
+    "time_limit_sec": 5.0,
+    "seed": 12345,
+    "output_dir": "results",
+    "log_dir": "logs"
+  },
+  "allocation": {
+    "total_tasks": 16,
+    "default_split": {
+      "greedy": 4,
+      "rens": 4,
+      "local_search_lp": 4,
+      "dive_fix": 4
+    }
+  },
+  "grids": {
+    "greedy": {
+      "fix_ratio": [0.05, 0.10, 0.15],
+      "score_mode": ["obj", "pseudocost"],
+      "seed": [11, 12, 13]
+    },
+    "rens": {
+      "lp_neighborhood_radius": [0.01, 0.05, 0.10],
+      "int_tol": [1e-06, 1e-05],
+      "seed": [21, 22]
+    },
+    "local_search_lp": {
+      "neighborhood_size": [32, 64, 128],
+      "move_policy": ["1flip", "2flip", "ruin_recreate"],
+      "seed": [31, 32]
+    },
+    "dive_fix": {
+      "branch_score": ["fractionality", "reduced_cost", "inference"],
+      "fix_batch_size": [8, 16, 32],
+      "backtrack_depth": [1, 2],
+      "seed": [41, 42]
+    }
+  }
+}
