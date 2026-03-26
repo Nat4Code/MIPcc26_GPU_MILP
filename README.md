@@ -1,6 +1,16 @@
 # MIPcc26_GPU_MILP
 Applying multi-processing primal heuristic algorithms to Mixed Integer Linear Programs (MILPs) on the MIPcc26 problem instances.
 
+Enter Gurobi Apptainer:
+======================================================================
+Note: put your licence file one directory up from the pwd.
+
+apptainer shell \
+  --bind "$PWD:/work" \
+  --bind "$PWD/../gurobi.lic:/opt/gurobi/gurobi.lic" \
+  --env GRB_LICENSE_FILE=/opt/gurobi/gurobi.lic \
+  gurobi.sif
+
 To run baseline on an individual case:
 ./baseline tests/instance_01.original.mps
 
@@ -64,6 +74,5 @@ Dive-and-fix
 * shallow backtracking
 * short subproblem solves
 
-Your question can be stated more sharply as:
-
+Research question we will attempt to answer:
 Given a MILP instance and a small primal-heuristic budget (roughly 0.1–5 seconds), can instance-structure features predict an allocation of parallel compute effort across multiple primal heuristics that improves incumbent quality relative to static allocations?
