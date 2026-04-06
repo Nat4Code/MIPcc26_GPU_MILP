@@ -3,33 +3,45 @@ import json
 import os
 import sys
 
+import gurobipy as gp
+
+
 def extract_features(instance_path: str) -> dict:
-    # Placeholder feature extraction.
-    # Replace with actual MPS/LP parser or solver-based model introspection.
-    #
-    # Good future features:
-    # - number of vars, binaries, integers, continuous
-    # - number of constraints
-    # - density / nnz
-    # - ratio of binaries
-    # - objective sparsity
-    # - row type counts
-    # - LP relaxation gap estimate
-    # - graph/community statistics
-    # - presolve reductions
-    #
-    # For now: dummy features keyed off file size.
-    file_size = os.path.getsize(instance_path)
+    model = gp.read(instance_path)
+    model.update()
+
+    num_vars = int(model.NumVars)
+    num_bin = int(model.NumBinVars)
+    num_int_total = int(model.NumIntVars)
+    num_int_nonbin = max(0, num_int_total - num_bin)
+    num_constr = int(model.NumConstrs)
+
+    try:
+        num_nz = int(model.NumNZs)
+    except Exception:
+        num_nz = 0
+
+    density = 0.0
+    if num_vars > 0 and num_constr > 0:
+        density = num_nz / float(num_vars * num_constr)
+
+    sense = "min" if int(model.ModelSense) == 1 else "max"
 
     return {
         "instance_path": instance_path,
-        "file_size_bytes": file_size,
-        "num_vars_est": max(100, file_size // 50),
-        "num_bin_est": max(20, file_size // 200),
-        "num_constr_est": max(50, file_size // 100),
-        "density_est": 0.02,
-        "bin_ratio_est": 0.25
+        "file_size_bytes": os.path.getsize(instance_path),
+        "num_vars_est": num_vars,
+        "num_bin_est": num_bin,
+        "num_int_est": num_int_nonbin,
+        "num_constr_est": num_constr,
+        "num_nz_est": num_nz,
+        "density_est": density,
+        "bin_ratio_est": (num_bin / num_vars) if num_vars > 0 else 0.0,
+        "integrality_ratio_est": (num_int_total / num_vars) if num_vars > 0 else 0.0,
+        "objective_sense": sense,
+        "gurobi_model_sense": int(model.ModelSense),
     }
+
 
 def main():
     if len(sys.argv) != 3:
@@ -45,6 +57,8 @@ def main():
         json.dump(feats, f, indent=2)
 
     print(f"Wrote features to {out_path}")
+    print(f"Objective sense: {feats['objective_sense']}")
+
 
 if __name__ == "__main__":
     main()

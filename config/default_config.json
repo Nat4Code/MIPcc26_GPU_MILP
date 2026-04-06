@@ -1,9 +1,11 @@
 {
   "global": {
-    "time_limit_sec": 5.0,
+    "time_limit_sec": 2.0,
     "seed": 12345,
     "output_dir": "results",
-    "log_dir": "logs"
+    "log_dir": "logs",
+    "sense": "min",
+    "per_candidate_overhead_sec": 0.0
   },
   "allocation": {
     "total_tasks": 16,
@@ -12,28 +14,39 @@
       "rens": 4,
       "local_search_lp": 4,
       "dive_fix": 4
+    },
+    "rules": {
+      "high_binary_ratio_threshold": 0.45,
+      "large_binary_count_threshold": 1000,
+      "small_constraint_threshold": 250
     }
   },
   "grids": {
     "greedy": {
-      "fix_ratio": [0.05, 0.10, 0.15],
-      "score_mode": ["obj", "pseudocost"],
-      "seed": [11, 12, 13]
+      "fix_ratio": [0.10, 0.20],
+      "score_mode": ["reduced_cost", "pseudocost", "locks"],
+      "repair_mode": ["round_then_repair", "fractional_first"],
+      "submip_nodes": [200, 400],
+      "seed": [11, 12]
     },
     "rens": {
-      "lp_neighborhood_radius": [0.01, 0.05, 0.10],
+      "lp_neighborhood_radius": [0.01, 0.03, 0.05],
       "int_tol": [1e-06, 1e-05],
+      "submip_nodes": [200, 400],
+      "general_int_band": [1],
       "seed": [21, 22]
     },
     "local_search_lp": {
-      "neighborhood_size": [32, 64, 128],
+      "neighborhood_size": [16, 32, 64],
       "move_policy": ["1flip", "2flip", "ruin_recreate"],
+      "submip_nodes": [250, 500],
       "seed": [31, 32]
     },
     "dive_fix": {
       "branch_score": ["fractionality", "reduced_cost", "inference"],
-      "fix_batch_size": [8, 16, 32],
+      "fix_batch_size": [8, 16, 24],
       "backtrack_depth": [1, 2],
+      "submip_nodes": [200, 400],
       "seed": [41, 42]
     }
   }

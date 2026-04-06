@@ -1,0 +1,1350 @@
+{
+  "instance_path": "tests/instance_03.original.mps",
+  "features": {
+    "instance_path": "tests/instance_03.original.mps",
+    "file_size_bytes": 922092,
+    "num_vars_est": 2401,
+    "num_bin_est": 1600,
+    "num_int_est": 0,
+    "num_constr_est": 1990,
+    "num_nz_est": 23020,
+    "density_est": 0.0048179255293543935,
+    "bin_ratio_est": 0.6663890045814244,
+    "integrality_ratio_est": 0.6663890045814244,
+    "objective_sense": "min",
+    "gurobi_model_sense": 1
+  },
+  "global": {
+    "time_limit_sec": 2.0,
+    "seed": 12345,
+    "output_dir": "results",
+    "log_dir": "logs",
+    "sense": "min",
+    "per_candidate_overhead_sec": 0.0
+  },
+  "objective_sense": "min",
+  "allocation": {
+    "greedy": 1,
+    "rens": 2,
+    "local_search_lp": 12,
+    "dive_fix": 1
+  },
+  "tasks": [
+    {
+      "task_id": 0,
+      "method": "greedy",
+      "method_task_index": 0,
+      "num_method_tasks": 1,
+      "grid_size_total": 48,
+      "grid_size_local": 48,
+      "params_list": [
+        {
+          "fix_ratio": 0.1,
+          "score_mode": "reduced_cost",
+          "repair_mode": "round_then_repair",
+          "submip_nodes": 200,
+          "seed": 11
+        },
+        {
+          "fix_ratio": 0.1,
+          "score_mode": "reduced_cost",
+          "repair_mode": "round_then_repair",
+          "submip_nodes": 200,
+          "seed": 12
+        },
+        {
+          "fix_ratio": 0.1,
+          "score_mode": "reduced_cost",
+          "repair_mode": "round_then_repair",
+          "submip_nodes": 400,
+          "seed": 11
+        },
+        {
+          "fix_ratio": 0.1,
+          "score_mode": "reduced_cost",
+          "repair_mode": "round_then_repair",
+          "submip_nodes": 400,
+          "seed": 12
+        },
+        {
+          "fix_ratio": 0.1,
+          "score_mode": "reduced_cost",
+          "repair_mode": "fractional_first",
+          "submip_nodes": 200,
+          "seed": 11
+        },
+        {
+          "fix_ratio": 0.1,
+          "score_mode": "reduced_cost",
+          "repair_mode": "fractional_first",
+          "submip_nodes": 200,
+          "seed": 12
+        },
+        {
+          "fix_ratio": 0.1,
+          "score_mode": "reduced_cost",
+          "repair_mode": "fractional_first",
+          "submip_nodes": 400,
+          "seed": 11
+        },
+        {
+          "fix_ratio": 0.1,
+          "score_mode": "reduced_cost",
+          "repair_mode": "fractional_first",
+          "submip_nodes": 400,
+          "seed": 12
+        },
+        {
+          "fix_ratio": 0.1,
+          "score_mode": "pseudocost",
+          "repair_mode": "round_then_repair",
+          "submip_nodes": 200,
+          "seed": 11
+        },
+        {
+          "fix_ratio": 0.1,
+          "score_mode": "pseudocost",
+          "repair_mode": "round_then_repair",
+          "submip_nodes": 200,
+          "seed": 12
+        },
+        {
+          "fix_ratio": 0.1,
+          "score_mode": "pseudocost",
+          "repair_mode": "round_then_repair",
+          "submip_nodes": 400,
+          "seed": 11
+        },
+        {
+          "fix_ratio": 0.1,
+          "score_mode": "pseudocost",
+          "repair_mode": "round_then_repair",
+          "submip_nodes": 400,
+          "seed": 12
+        },
+        {
+          "fix_ratio": 0.1,
+          "score_mode": "pseudocost",
+          "repair_mode": "fractional_first",
+          "submip_nodes": 200,
+          "seed": 11
+        },
+        {
+          "fix_ratio": 0.1,
+          "score_mode": "pseudocost",
+          "repair_mode": "fractional_first",
+          "submip_nodes": 200,
+          "seed": 12
+        },
+        {
+          "fix_ratio": 0.1,
+          "score_mode": "pseudocost",
+          "repair_mode": "fractional_first",
+          "submip_nodes": 400,
+          "seed": 11
+        },
+        {
+          "fix_ratio": 0.1,
+          "score_mode": "pseudocost",
+          "repair_mode": "fractional_first",
+          "submip_nodes": 400,
+          "seed": 12
+        },
+        {
+          "fix_ratio": 0.1,
+          "score_mode": "locks",
+          "repair_mode": "round_then_repair",
+          "submip_nodes": 200,
+          "seed": 11
+        },
+        {
+          "fix_ratio": 0.1,
+          "score_mode": "locks",
+          "repair_mode": "round_then_repair",
+          "submip_nodes": 200,
+          "seed": 12
+        },
+        {
+          "fix_ratio": 0.1,
+          "score_mode": "locks",
+          "repair_mode": "round_then_repair",
+          "submip_nodes": 400,
+          "seed": 11
+        },
+        {
+          "fix_ratio": 0.1,
+          "score_mode": "locks",
+          "repair_mode": "round_then_repair",
+          "submip_nodes": 400,
+          "seed": 12
+        },
+        {
+          "fix_ratio": 0.1,
+          "score_mode": "locks",
+          "repair_mode": "fractional_first",
+          "submip_nodes": 200,
+          "seed": 11
+        },
+        {
+          "fix_ratio": 0.1,
+          "score_mode": "locks",
+          "repair_mode": "fractional_first",
+          "submip_nodes": 200,
+          "seed": 12
+        },
+        {
+          "fix_ratio": 0.1,
+          "score_mode": "locks",
+          "repair_mode": "fractional_first",
+          "submip_nodes": 400,
+          "seed": 11
+        },
+        {
+          "fix_ratio": 0.1,
+          "score_mode": "locks",
+          "repair_mode": "fractional_first",
+          "submip_nodes": 400,
+          "seed": 12
+        },
+        {
+          "fix_ratio": 0.2,
+          "score_mode": "reduced_cost",
+          "repair_mode": "round_then_repair",
+          "submip_nodes": 200,
+          "seed": 11
+        },
+        {
+          "fix_ratio": 0.2,
+          "score_mode": "reduced_cost",
+          "repair_mode": "round_then_repair",
+          "submip_nodes": 200,
+          "seed": 12
+        },
+        {
+          "fix_ratio": 0.2,
+          "score_mode": "reduced_cost",
+          "repair_mode": "round_then_repair",
+          "submip_nodes": 400,
+          "seed": 11
+        },
+        {
+          "fix_ratio": 0.2,
+          "score_mode": "reduced_cost",
+          "repair_mode": "round_then_repair",
+          "submip_nodes": 400,
+          "seed": 12
+        },
+        {
+          "fix_ratio": 0.2,
+          "score_mode": "reduced_cost",
+          "repair_mode": "fractional_first",
+          "submip_nodes": 200,
+          "seed": 11
+        },
+        {
+          "fix_ratio": 0.2,
+          "score_mode": "reduced_cost",
+          "repair_mode": "fractional_first",
+          "submip_nodes": 200,
+          "seed": 12
+        },
+        {
+          "fix_ratio": 0.2,
+          "score_mode": "reduced_cost",
+          "repair_mode": "fractional_first",
+          "submip_nodes": 400,
+          "seed": 11
+        },
+        {
+          "fix_ratio": 0.2,
+          "score_mode": "reduced_cost",
+          "repair_mode": "fractional_first",
+          "submip_nodes": 400,
+          "seed": 12
+        },
+        {
+          "fix_ratio": 0.2,
+          "score_mode": "pseudocost",
+          "repair_mode": "round_then_repair",
+          "submip_nodes": 200,
+          "seed": 11
+        },
+        {
+          "fix_ratio": 0.2,
+          "score_mode": "pseudocost",
+          "repair_mode": "round_then_repair",
+          "submip_nodes": 200,
+          "seed": 12
+        },
+        {
+          "fix_ratio": 0.2,
+          "score_mode": "pseudocost",
+          "repair_mode": "round_then_repair",
+          "submip_nodes": 400,
+          "seed": 11
+        },
+        {
+          "fix_ratio": 0.2,
+          "score_mode": "pseudocost",
+          "repair_mode": "round_then_repair",
+          "submip_nodes": 400,
+          "seed": 12
+        },
+        {
+          "fix_ratio": 0.2,
+          "score_mode": "pseudocost",
+          "repair_mode": "fractional_first",
+          "submip_nodes": 200,
+          "seed": 11
+        },
+        {
+          "fix_ratio": 0.2,
+          "score_mode": "pseudocost",
+          "repair_mode": "fractional_first",
+          "submip_nodes": 200,
+          "seed": 12
+        },
+        {
+          "fix_ratio": 0.2,
+          "score_mode": "pseudocost",
+          "repair_mode": "fractional_first",
+          "submip_nodes": 400,
+          "seed": 11
+        },
+        {
+          "fix_ratio": 0.2,
+          "score_mode": "pseudocost",
+          "repair_mode": "fractional_first",
+          "submip_nodes": 400,
+          "seed": 12
+        },
+        {
+          "fix_ratio": 0.2,
+          "score_mode": "locks",
+          "repair_mode": "round_then_repair",
+          "submip_nodes": 200,
+          "seed": 11
+        },
+        {
+          "fix_ratio": 0.2,
+          "score_mode": "locks",
+          "repair_mode": "round_then_repair",
+          "submip_nodes": 200,
+          "seed": 12
+        },
+        {
+          "fix_ratio": 0.2,
+          "score_mode": "locks",
+          "repair_mode": "round_then_repair",
+          "submip_nodes": 400,
+          "seed": 11
+        },
+        {
+          "fix_ratio": 0.2,
+          "score_mode": "locks",
+          "repair_mode": "round_then_repair",
+          "submip_nodes": 400,
+          "seed": 12
+        },
+        {
+          "fix_ratio": 0.2,
+          "score_mode": "locks",
+          "repair_mode": "fractional_first",
+          "submip_nodes": 200,
+          "seed": 11
+        },
+        {
+          "fix_ratio": 0.2,
+          "score_mode": "locks",
+          "repair_mode": "fractional_first",
+          "submip_nodes": 200,
+          "seed": 12
+        },
+        {
+          "fix_ratio": 0.2,
+          "score_mode": "locks",
+          "repair_mode": "fractional_first",
+          "submip_nodes": 400,
+          "seed": 11
+        },
+        {
+          "fix_ratio": 0.2,
+          "score_mode": "locks",
+          "repair_mode": "fractional_first",
+          "submip_nodes": 400,
+          "seed": 12
+        }
+      ]
+    },
+    {
+      "task_id": 1,
+      "method": "rens",
+      "method_task_index": 0,
+      "num_method_tasks": 2,
+      "grid_size_total": 24,
+      "grid_size_local": 12,
+      "params_list": [
+        {
+          "lp_neighborhood_radius": 0.01,
+          "int_tol": 1e-06,
+          "submip_nodes": 200,
+          "general_int_band": 1,
+          "seed": 21
+        },
+        {
+          "lp_neighborhood_radius": 0.01,
+          "int_tol": 1e-06,
+          "submip_nodes": 400,
+          "general_int_band": 1,
+          "seed": 21
+        },
+        {
+          "lp_neighborhood_radius": 0.01,
+          "int_tol": 1e-05,
+          "submip_nodes": 200,
+          "general_int_band": 1,
+          "seed": 21
+        },
+        {
+          "lp_neighborhood_radius": 0.01,
+          "int_tol": 1e-05,
+          "submip_nodes": 400,
+          "general_int_band": 1,
+          "seed": 21
+        },
+        {
+          "lp_neighborhood_radius": 0.03,
+          "int_tol": 1e-06,
+          "submip_nodes": 200,
+          "general_int_band": 1,
+          "seed": 21
+        },
+        {
+          "lp_neighborhood_radius": 0.03,
+          "int_tol": 1e-06,
+          "submip_nodes": 400,
+          "general_int_band": 1,
+          "seed": 21
+        },
+        {
+          "lp_neighborhood_radius": 0.03,
+          "int_tol": 1e-05,
+          "submip_nodes": 200,
+          "general_int_band": 1,
+          "seed": 21
+        },
+        {
+          "lp_neighborhood_radius": 0.03,
+          "int_tol": 1e-05,
+          "submip_nodes": 400,
+          "general_int_band": 1,
+          "seed": 21
+        },
+        {
+          "lp_neighborhood_radius": 0.05,
+          "int_tol": 1e-06,
+          "submip_nodes": 200,
+          "general_int_band": 1,
+          "seed": 21
+        },
+        {
+          "lp_neighborhood_radius": 0.05,
+          "int_tol": 1e-06,
+          "submip_nodes": 400,
+          "general_int_band": 1,
+          "seed": 21
+        },
+        {
+          "lp_neighborhood_radius": 0.05,
+          "int_tol": 1e-05,
+          "submip_nodes": 200,
+          "general_int_band": 1,
+          "seed": 21
+        },
+        {
+          "lp_neighborhood_radius": 0.05,
+          "int_tol": 1e-05,
+          "submip_nodes": 400,
+          "general_int_band": 1,
+          "seed": 21
+        }
+      ]
+    },
+    {
+      "task_id": 2,
+      "method": "rens",
+      "method_task_index": 1,
+      "num_method_tasks": 2,
+      "grid_size_total": 24,
+      "grid_size_local": 12,
+      "params_list": [
+        {
+          "lp_neighborhood_radius": 0.01,
+          "int_tol": 1e-06,
+          "submip_nodes": 200,
+          "general_int_band": 1,
+          "seed": 22
+        },
+        {
+          "lp_neighborhood_radius": 0.01,
+          "int_tol": 1e-06,
+          "submip_nodes": 400,
+          "general_int_band": 1,
+          "seed": 22
+        },
+        {
+          "lp_neighborhood_radius": 0.01,
+          "int_tol": 1e-05,
+          "submip_nodes": 200,
+          "general_int_band": 1,
+          "seed": 22
+        },
+        {
+          "lp_neighborhood_radius": 0.01,
+          "int_tol": 1e-05,
+          "submip_nodes": 400,
+          "general_int_band": 1,
+          "seed": 22
+        },
+        {
+          "lp_neighborhood_radius": 0.03,
+          "int_tol": 1e-06,
+          "submip_nodes": 200,
+          "general_int_band": 1,
+          "seed": 22
+        },
+        {
+          "lp_neighborhood_radius": 0.03,
+          "int_tol": 1e-06,
+          "submip_nodes": 400,
+          "general_int_band": 1,
+          "seed": 22
+        },
+        {
+          "lp_neighborhood_radius": 0.03,
+          "int_tol": 1e-05,
+          "submip_nodes": 200,
+          "general_int_band": 1,
+          "seed": 22
+        },
+        {
+          "lp_neighborhood_radius": 0.03,
+          "int_tol": 1e-05,
+          "submip_nodes": 400,
+          "general_int_band": 1,
+          "seed": 22
+        },
+        {
+          "lp_neighborhood_radius": 0.05,
+          "int_tol": 1e-06,
+          "submip_nodes": 200,
+          "general_int_band": 1,
+          "seed": 22
+        },
+        {
+          "lp_neighborhood_radius": 0.05,
+          "int_tol": 1e-06,
+          "submip_nodes": 400,
+          "general_int_band": 1,
+          "seed": 22
+        },
+        {
+          "lp_neighborhood_radius": 0.05,
+          "int_tol": 1e-05,
+          "submip_nodes": 200,
+          "general_int_band": 1,
+          "seed": 22
+        },
+        {
+          "lp_neighborhood_radius": 0.05,
+          "int_tol": 1e-05,
+          "submip_nodes": 400,
+          "general_int_band": 1,
+          "seed": 22
+        }
+      ]
+    },
+    {
+      "task_id": 3,
+      "method": "local_search_lp",
+      "method_task_index": 0,
+      "num_method_tasks": 12,
+      "grid_size_total": 24,
+      "grid_size_local": 2,
+      "params_list": [
+        {
+          "neighborhood_size": 16,
+          "move_policy": "1flip",
+          "submip_nodes": 500,
+          "seed": 31
+        },
+        {
+          "neighborhood_size": 16,
+          "move_policy": "2flip",
+          "submip_nodes": 500,
+          "seed": 31
+        }
+      ]
+    },
+    {
+      "task_id": 4,
+      "method": "local_search_lp",
+      "method_task_index": 1,
+      "num_method_tasks": 12,
+      "grid_size_total": 24,
+      "grid_size_local": 2,
+      "params_list": [
+        {
+          "neighborhood_size": 16,
+          "move_policy": "1flip",
+          "submip_nodes": 500,
+          "seed": 32
+        },
+        {
+          "neighborhood_size": 16,
+          "move_policy": "ruin_recreate",
+          "submip_nodes": 500,
+          "seed": 31
+        }
+      ]
+    },
+    {
+      "task_id": 5,
+      "method": "local_search_lp",
+      "method_task_index": 2,
+      "num_method_tasks": 12,
+      "grid_size_total": 24,
+      "grid_size_local": 2,
+      "params_list": [
+        {
+          "neighborhood_size": 16,
+          "move_policy": "1flip",
+          "submip_nodes": 250,
+          "seed": 31
+        },
+        {
+          "neighborhood_size": 16,
+          "move_policy": "2flip",
+          "submip_nodes": 500,
+          "seed": 32
+        }
+      ]
+    },
+    {
+      "task_id": 6,
+      "method": "local_search_lp",
+      "method_task_index": 3,
+      "num_method_tasks": 12,
+      "grid_size_total": 24,
+      "grid_size_local": 2,
+      "params_list": [
+        {
+          "neighborhood_size": 16,
+          "move_policy": "1flip",
+          "submip_nodes": 250,
+          "seed": 32
+        },
+        {
+          "neighborhood_size": 16,
+          "move_policy": "ruin_recreate",
+          "submip_nodes": 500,
+          "seed": 32
+        }
+      ]
+    },
+    {
+      "task_id": 7,
+      "method": "local_search_lp",
+      "method_task_index": 4,
+      "num_method_tasks": 12,
+      "grid_size_total": 24,
+      "grid_size_local": 2,
+      "params_list": [
+        {
+          "neighborhood_size": 32,
+          "move_policy": "1flip",
+          "submip_nodes": 500,
+          "seed": 31
+        },
+        {
+          "neighborhood_size": 16,
+          "move_policy": "2flip",
+          "submip_nodes": 250,
+          "seed": 31
+        }
+      ]
+    },
+    {
+      "task_id": 8,
+      "method": "local_search_lp",
+      "method_task_index": 5,
+      "num_method_tasks": 12,
+      "grid_size_total": 24,
+      "grid_size_local": 2,
+      "params_list": [
+        {
+          "neighborhood_size": 32,
+          "move_policy": "1flip",
+          "submip_nodes": 500,
+          "seed": 32
+        },
+        {
+          "neighborhood_size": 16,
+          "move_policy": "ruin_recreate",
+          "submip_nodes": 250,
+          "seed": 31
+        }
+      ]
+    },
+    {
+      "task_id": 9,
+      "method": "local_search_lp",
+      "method_task_index": 6,
+      "num_method_tasks": 12,
+      "grid_size_total": 24,
+      "grid_size_local": 2,
+      "params_list": [
+        {
+          "neighborhood_size": 32,
+          "move_policy": "1flip",
+          "submip_nodes": 250,
+          "seed": 31
+        },
+        {
+          "neighborhood_size": 16,
+          "move_policy": "2flip",
+          "submip_nodes": 250,
+          "seed": 32
+        }
+      ]
+    },
+    {
+      "task_id": 10,
+      "method": "local_search_lp",
+      "method_task_index": 7,
+      "num_method_tasks": 12,
+      "grid_size_total": 24,
+      "grid_size_local": 2,
+      "params_list": [
+        {
+          "neighborhood_size": 32,
+          "move_policy": "1flip",
+          "submip_nodes": 250,
+          "seed": 32
+        },
+        {
+          "neighborhood_size": 16,
+          "move_policy": "ruin_recreate",
+          "submip_nodes": 250,
+          "seed": 32
+        }
+      ]
+    },
+    {
+      "task_id": 11,
+      "method": "local_search_lp",
+      "method_task_index": 8,
+      "num_method_tasks": 12,
+      "grid_size_total": 24,
+      "grid_size_local": 2,
+      "params_list": [
+        {
+          "neighborhood_size": 64,
+          "move_policy": "1flip",
+          "submip_nodes": 500,
+          "seed": 31
+        },
+        {
+          "neighborhood_size": 32,
+          "move_policy": "2flip",
+          "submip_nodes": 500,
+          "seed": 31
+        }
+      ]
+    },
+    {
+      "task_id": 12,
+      "method": "local_search_lp",
+      "method_task_index": 9,
+      "num_method_tasks": 12,
+      "grid_size_total": 24,
+      "grid_size_local": 2,
+      "params_list": [
+        {
+          "neighborhood_size": 64,
+          "move_policy": "1flip",
+          "submip_nodes": 500,
+          "seed": 32
+        },
+        {
+          "neighborhood_size": 32,
+          "move_policy": "ruin_recreate",
+          "submip_nodes": 500,
+          "seed": 31
+        }
+      ]
+    },
+    {
+      "task_id": 13,
+      "method": "local_search_lp",
+      "method_task_index": 10,
+      "num_method_tasks": 12,
+      "grid_size_total": 24,
+      "grid_size_local": 2,
+      "params_list": [
+        {
+          "neighborhood_size": 64,
+          "move_policy": "1flip",
+          "submip_nodes": 250,
+          "seed": 31
+        },
+        {
+          "neighborhood_size": 32,
+          "move_policy": "2flip",
+          "submip_nodes": 500,
+          "seed": 32
+        }
+      ]
+    },
+    {
+      "task_id": 14,
+      "method": "local_search_lp",
+      "method_task_index": 11,
+      "num_method_tasks": 12,
+      "grid_size_total": 24,
+      "grid_size_local": 2,
+      "params_list": [
+        {
+          "neighborhood_size": 64,
+          "move_policy": "1flip",
+          "submip_nodes": 250,
+          "seed": 32
+        },
+        {
+          "neighborhood_size": 32,
+          "move_policy": "ruin_recreate",
+          "submip_nodes": 500,
+          "seed": 32
+        }
+      ]
+    },
+    {
+      "task_id": 15,
+      "method": "dive_fix",
+      "method_task_index": 0,
+      "num_method_tasks": 1,
+      "grid_size_total": 72,
+      "grid_size_local": 72,
+      "params_list": [
+        {
+          "branch_score": "fractionality",
+          "fix_batch_size": 8,
+          "backtrack_depth": 1,
+          "submip_nodes": 200,
+          "seed": 41
+        },
+        {
+          "branch_score": "fractionality",
+          "fix_batch_size": 8,
+          "backtrack_depth": 1,
+          "submip_nodes": 200,
+          "seed": 42
+        },
+        {
+          "branch_score": "fractionality",
+          "fix_batch_size": 8,
+          "backtrack_depth": 1,
+          "submip_nodes": 400,
+          "seed": 41
+        },
+        {
+          "branch_score": "fractionality",
+          "fix_batch_size": 8,
+          "backtrack_depth": 1,
+          "submip_nodes": 400,
+          "seed": 42
+        },
+        {
+          "branch_score": "fractionality",
+          "fix_batch_size": 8,
+          "backtrack_depth": 2,
+          "submip_nodes": 200,
+          "seed": 41
+        },
+        {
+          "branch_score": "fractionality",
+          "fix_batch_size": 8,
+          "backtrack_depth": 2,
+          "submip_nodes": 200,
+          "seed": 42
+        },
+        {
+          "branch_score": "fractionality",
+          "fix_batch_size": 8,
+          "backtrack_depth": 2,
+          "submip_nodes": 400,
+          "seed": 41
+        },
+        {
+          "branch_score": "fractionality",
+          "fix_batch_size": 8,
+          "backtrack_depth": 2,
+          "submip_nodes": 400,
+          "seed": 42
+        },
+        {
+          "branch_score": "fractionality",
+          "fix_batch_size": 16,
+          "backtrack_depth": 1,
+          "submip_nodes": 200,
+          "seed": 41
+        },
+        {
+          "branch_score": "fractionality",
+          "fix_batch_size": 16,
+          "backtrack_depth": 1,
+          "submip_nodes": 200,
+          "seed": 42
+        },
+        {
+          "branch_score": "fractionality",
+          "fix_batch_size": 16,
+          "backtrack_depth": 1,
+          "submip_nodes": 400,
+          "seed": 41
+        },
+        {
+          "branch_score": "fractionality",
+          "fix_batch_size": 16,
+          "backtrack_depth": 1,
+          "submip_nodes": 400,
+          "seed": 42
+        },
+        {
+          "branch_score": "fractionality",
+          "fix_batch_size": 16,
+          "backtrack_depth": 2,
+          "submip_nodes": 200,
+          "seed": 41
+        },
+        {
+          "branch_score": "fractionality",
+          "fix_batch_size": 16,
+          "backtrack_depth": 2,
+          "submip_nodes": 200,
+          "seed": 42
+        },
+        {
+          "branch_score": "fractionality",
+          "fix_batch_size": 16,
+          "backtrack_depth": 2,
+          "submip_nodes": 400,
+          "seed": 41
+        },
+        {
+          "branch_score": "fractionality",
+          "fix_batch_size": 16,
+          "backtrack_depth": 2,
+          "submip_nodes": 400,
+          "seed": 42
+        },
+        {
+          "branch_score": "fractionality",
+          "fix_batch_size": 24,
+          "backtrack_depth": 1,
+          "submip_nodes": 200,
+          "seed": 41
+        },
+        {
+          "branch_score": "fractionality",
+          "fix_batch_size": 24,
+          "backtrack_depth": 1,
+          "submip_nodes": 200,
+          "seed": 42
+        },
+        {
+          "branch_score": "fractionality",
+          "fix_batch_size": 24,
+          "backtrack_depth": 1,
+          "submip_nodes": 400,
+          "seed": 41
+        },
+        {
+          "branch_score": "fractionality",
+          "fix_batch_size": 24,
+          "backtrack_depth": 1,
+          "submip_nodes": 400,
+          "seed": 42
+        },
+        {
+          "branch_score": "fractionality",
+          "fix_batch_size": 24,
+          "backtrack_depth": 2,
+          "submip_nodes": 200,
+          "seed": 41
+        },
+        {
+          "branch_score": "fractionality",
+          "fix_batch_size": 24,
+          "backtrack_depth": 2,
+          "submip_nodes": 200,
+          "seed": 42
+        },
+        {
+          "branch_score": "fractionality",
+          "fix_batch_size": 24,
+          "backtrack_depth": 2,
+          "submip_nodes": 400,
+          "seed": 41
+        },
+        {
+          "branch_score": "fractionality",
+          "fix_batch_size": 24,
+          "backtrack_depth": 2,
+          "submip_nodes": 400,
+          "seed": 42
+        },
+        {
+          "branch_score": "reduced_cost",
+          "fix_batch_size": 8,
+          "backtrack_depth": 1,
+          "submip_nodes": 200,
+          "seed": 41
+        },
+        {
+          "branch_score": "reduced_cost",
+          "fix_batch_size": 8,
+          "backtrack_depth": 1,
+          "submip_nodes": 200,
+          "seed": 42
+        },
+        {
+          "branch_score": "reduced_cost",
+          "fix_batch_size": 8,
+          "backtrack_depth": 1,
+          "submip_nodes": 400,
+          "seed": 41
+        },
+        {
+          "branch_score": "reduced_cost",
+          "fix_batch_size": 8,
+          "backtrack_depth": 1,
+          "submip_nodes": 400,
+          "seed": 42
+        },
+        {
+          "branch_score": "reduced_cost",
+          "fix_batch_size": 8,
+          "backtrack_depth": 2,
+          "submip_nodes": 200,
+          "seed": 41
+        },
+        {
+          "branch_score": "reduced_cost",
+          "fix_batch_size": 8,
+          "backtrack_depth": 2,
+          "submip_nodes": 200,
+          "seed": 42
+        },
+        {
+          "branch_score": "reduced_cost",
+          "fix_batch_size": 8,
+          "backtrack_depth": 2,
+          "submip_nodes": 400,
+          "seed": 41
+        },
+        {
+          "branch_score": "reduced_cost",
+          "fix_batch_size": 8,
+          "backtrack_depth": 2,
+          "submip_nodes": 400,
+          "seed": 42
+        },
+        {
+          "branch_score": "reduced_cost",
+          "fix_batch_size": 16,
+          "backtrack_depth": 1,
+          "submip_nodes": 200,
+          "seed": 41
+        },
+        {
+          "branch_score": "reduced_cost",
+          "fix_batch_size": 16,
+          "backtrack_depth": 1,
+          "submip_nodes": 200,
+          "seed": 42
+        },
+        {
+          "branch_score": "reduced_cost",
+          "fix_batch_size": 16,
+          "backtrack_depth": 1,
+          "submip_nodes": 400,
+          "seed": 41
+        },
+        {
+          "branch_score": "reduced_cost",
+          "fix_batch_size": 16,
+          "backtrack_depth": 1,
+          "submip_nodes": 400,
+          "seed": 42
+        },
+        {
+          "branch_score": "reduced_cost",
+          "fix_batch_size": 16,
+          "backtrack_depth": 2,
+          "submip_nodes": 200,
+          "seed": 41
+        },
+        {
+          "branch_score": "reduced_cost",
+          "fix_batch_size": 16,
+          "backtrack_depth": 2,
+          "submip_nodes": 200,
+          "seed": 42
+        },
+        {
+          "branch_score": "reduced_cost",
+          "fix_batch_size": 16,
+          "backtrack_depth": 2,
+          "submip_nodes": 400,
+          "seed": 41
+        },
+        {
+          "branch_score": "reduced_cost",
+          "fix_batch_size": 16,
+          "backtrack_depth": 2,
+          "submip_nodes": 400,
+          "seed": 42
+        },
+        {
+          "branch_score": "reduced_cost",
+          "fix_batch_size": 24,
+          "backtrack_depth": 1,
+          "submip_nodes": 200,
+          "seed": 41
+        },
+        {
+          "branch_score": "reduced_cost",
+          "fix_batch_size": 24,
+          "backtrack_depth": 1,
+          "submip_nodes": 200,
+          "seed": 42
+        },
+        {
+          "branch_score": "reduced_cost",
+          "fix_batch_size": 24,
+          "backtrack_depth": 1,
+          "submip_nodes": 400,
+          "seed": 41
+        },
+        {
+          "branch_score": "reduced_cost",
+          "fix_batch_size": 24,
+          "backtrack_depth": 1,
+          "submip_nodes": 400,
+          "seed": 42
+        },
+        {
+          "branch_score": "reduced_cost",
+          "fix_batch_size": 24,
+          "backtrack_depth": 2,
+          "submip_nodes": 200,
+          "seed": 41
+        },
+        {
+          "branch_score": "reduced_cost",
+          "fix_batch_size": 24,
+          "backtrack_depth": 2,
+          "submip_nodes": 200,
+          "seed": 42
+        },
+        {
+          "branch_score": "reduced_cost",
+          "fix_batch_size": 24,
+          "backtrack_depth": 2,
+          "submip_nodes": 400,
+          "seed": 41
+        },
+        {
+          "branch_score": "reduced_cost",
+          "fix_batch_size": 24,
+          "backtrack_depth": 2,
+          "submip_nodes": 400,
+          "seed": 42
+        },
+        {
+          "branch_score": "inference",
+          "fix_batch_size": 8,
+          "backtrack_depth": 1,
+          "submip_nodes": 200,
+          "seed": 41
+        },
+        {
+          "branch_score": "inference",
+          "fix_batch_size": 8,
+          "backtrack_depth": 1,
+          "submip_nodes": 200,
+          "seed": 42
+        },
+        {
+          "branch_score": "inference",
+          "fix_batch_size": 8,
+          "backtrack_depth": 1,
+          "submip_nodes": 400,
+          "seed": 41
+        },
+        {
+          "branch_score": "inference",
+          "fix_batch_size": 8,
+          "backtrack_depth": 1,
+          "submip_nodes": 400,
+          "seed": 42
+        },
+        {
+          "branch_score": "inference",
+          "fix_batch_size": 8,
+          "backtrack_depth": 2,
+          "submip_nodes": 200,
+          "seed": 41
+        },
+        {
+          "branch_score": "inference",
+          "fix_batch_size": 8,
+          "backtrack_depth": 2,
+          "submip_nodes": 200,
+          "seed": 42
+        },
+        {
+          "branch_score": "inference",
+          "fix_batch_size": 8,
+          "backtrack_depth": 2,
+          "submip_nodes": 400,
+          "seed": 41
+        },
+        {
+          "branch_score": "inference",
+          "fix_batch_size": 8,
+          "backtrack_depth": 2,
+          "submip_nodes": 400,
+          "seed": 42
+        },
+        {
+          "branch_score": "inference",
+          "fix_batch_size": 16,
+          "backtrack_depth": 1,
+          "submip_nodes": 200,
+          "seed": 41
+        },
+        {
+          "branch_score": "inference",
+          "fix_batch_size": 16,
+          "backtrack_depth": 1,
+          "submip_nodes": 200,
+          "seed": 42
+        },
+        {
+          "branch_score": "inference",
+          "fix_batch_size": 16,
+          "backtrack_depth": 1,
+          "submip_nodes": 400,
+          "seed": 41
+        },
+        {
+          "branch_score": "inference",
+          "fix_batch_size": 16,
+          "backtrack_depth": 1,
+          "submip_nodes": 400,
+          "seed": 42
+        },
+        {
+          "branch_score": "inference",
+          "fix_batch_size": 16,
+          "backtrack_depth": 2,
+          "submip_nodes": 200,
+          "seed": 41
+        },
+        {
+          "branch_score": "inference",
+          "fix_batch_size": 16,
+          "backtrack_depth": 2,
+          "submip_nodes": 200,
+          "seed": 42
+        },
+        {
+          "branch_score": "inference",
+          "fix_batch_size": 16,
+          "backtrack_depth": 2,
+          "submip_nodes": 400,
+          "seed": 41
+        },
+        {
+          "branch_score": "inference",
+          "fix_batch_size": 16,
+          "backtrack_depth": 2,
+          "submip_nodes": 400,
+          "seed": 42
+        },
+        {
+          "branch_score": "inference",
+          "fix_batch_size": 24,
+          "backtrack_depth": 1,
+          "submip_nodes": 200,
+          "seed": 41
+        },
+        {
+          "branch_score": "inference",
+          "fix_batch_size": 24,
+          "backtrack_depth": 1,
+          "submip_nodes": 200,
+          "seed": 42
+        },
+        {
+          "branch_score": "inference",
+          "fix_batch_size": 24,
+          "backtrack_depth": 1,
+          "submip_nodes": 400,
+          "seed": 41
+        },
+        {
+          "branch_score": "inference",
+          "fix_batch_size": 24,
+          "backtrack_depth": 1,
+          "submip_nodes": 400,
+          "seed": 42
+        },
+        {
+          "branch_score": "inference",
+          "fix_batch_size": 24,
+          "backtrack_depth": 2,
+          "submip_nodes": 200,
+          "seed": 41
+        },
+        {
+          "branch_score": "inference",
+          "fix_batch_size": 24,
+          "backtrack_depth": 2,
+          "submip_nodes": 200,
+          "seed": 42
+        },
+        {
+          "branch_score": "inference",
+          "fix_batch_size": 24,
+          "backtrack_depth": 2,
+          "submip_nodes": 400,
+          "seed": 41
+        },
+        {
+          "branch_score": "inference",
+          "fix_batch_size": 24,
+          "backtrack_depth": 2,
+          "submip_nodes": 400,
+          "seed": 42
+        }
+      ]
+    }
+  ],
+  "planning_notes": [
+    "Local-search-heavy plan to match ~5 sec per local_search candidate when farm_seconds=160 and total_tasks=16.",
+    "This deliberately trims the local_search grid and gives it most of the farm tasks."
+  ]
+}

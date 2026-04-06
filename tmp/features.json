@@ -1,0 +1,16 @@
+{
+  "instance_path": "tests/instance_03.original.mps",
+  "instance_name": "instance_03.original.mps",
+  "file_size_bytes": 922092,
+  "format_guess": "mps",
+  "num_vars_est": 2401,
+  "num_bin_est": 1600,
+  "num_int_est": 0,
+  "num_cont_est": 801,
+  "num_constr_est": 1990,
+  "num_nnz_est": 23020,
+  "density_est": 0.0048179255293543935,
+  "bin_ratio_est": 0.6663890045814244,
+  "integrality_ratio_est": 0.6663890045814244,
+  "gurobi_readable": true
+}
