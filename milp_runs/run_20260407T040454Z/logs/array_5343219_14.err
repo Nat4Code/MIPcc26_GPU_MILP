@@ -1,0 +1,6 @@
+INFO:    /etc/singularity/ exists; cleanup by system administrator is not complete (see https://apptainer.org/docs/admin/latest/singularity_migration.html)
+WARNING: skipping mount of /lustre/isaac/scratch: stat /lustre/isaac/scratch: no such file or directory
+WARNING: skipping mount of /lustre/isaac/proj: stat /lustre/isaac/proj: no such file or directory
+INFO:    Terminating squashfuse_ll after timeout
+INFO:    Timeouts can be caused by a running background process
+FATAL:   container creation failed: mount hook function failure: mount /lustre/isaac/scratch->/lustre/isaac/scratch error: while mounting /lustre/isaac/scratch: mount source /lustre/isaac/scratch doesn't exist

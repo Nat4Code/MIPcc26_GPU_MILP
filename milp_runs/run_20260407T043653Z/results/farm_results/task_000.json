@@ -1,0 +1,5599 @@
+{
+  "task_id": 0,
+  "method": "greedy",
+  "method_task_index": 0,
+  "num_method_tasks": 1,
+  "grid_size_total": 48,
+  "grid_size_local": 48,
+  "instance_path": "/nfs/home/nsheets1/MIP/MIPcc26/tests/instance_03.original.mps",
+  "objective_sense": "min",
+  "task_time_limit_sec": 10.0,
+  "per_candidate_time_limit_sec": 0.20833333333333334,
+  "status": "ok",
+  "elapsed_sec": 9.80097246170044,
+  "num_candidates": 48,
+  "num_errors": 0,
+  "best_effective_objective": null,
+  "best_candidate": null,
+  "candidate_summaries": [
+    {
+      "index": 0,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.5471024513244629,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "reduced_cost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 200,
+        "seed": 11
+      }
+    },
+    {
+      "index": 1,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.21096515655517578,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "reduced_cost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 200,
+        "seed": 12
+      }
+    },
+    {
+      "index": 2,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.20136094093322754,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "reduced_cost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 400,
+        "seed": 11
+      }
+    },
+    {
+      "index": 3,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.18738842010498047,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "reduced_cost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 400,
+        "seed": 12
+      }
+    },
+    {
+      "index": 4,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.13299226760864258,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "reduced_cost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 200,
+        "seed": 11
+      }
+    },
+    {
+      "index": 5,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.20060229301452637,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "reduced_cost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 200,
+        "seed": 12
+      }
+    },
+    {
+      "index": 6,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.19701409339904785,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "reduced_cost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 400,
+        "seed": 11
+      }
+    },
+    {
+      "index": 7,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.19878673553466797,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "reduced_cost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 400,
+        "seed": 12
+      }
+    },
+    {
+      "index": 8,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.18260717391967773,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "pseudocost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 200,
+        "seed": 11
+      }
+    },
+    {
+      "index": 9,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.1977710723876953,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "pseudocost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 200,
+        "seed": 12
+      }
+    },
+    {
+      "index": 10,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.19758963584899902,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "pseudocost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 400,
+        "seed": 11
+      }
+    },
+    {
+      "index": 11,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.19678139686584473,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "pseudocost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 400,
+        "seed": 12
+      }
+    },
+    {
+      "index": 12,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.17424488067626953,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "pseudocost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 200,
+        "seed": 11
+      }
+    },
+    {
+      "index": 13,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.1317746639251709,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "pseudocost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 200,
+        "seed": 12
+      }
+    },
+    {
+      "index": 14,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.19845795631408691,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "pseudocost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 400,
+        "seed": 11
+      }
+    },
+    {
+      "index": 15,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.1762981414794922,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "pseudocost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 400,
+        "seed": 12
+      }
+    },
+    {
+      "index": 16,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.19780993461608887,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "locks",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 200,
+        "seed": 11
+      }
+    },
+    {
+      "index": 17,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.196364164352417,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "locks",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 200,
+        "seed": 12
+      }
+    },
+    {
+      "index": 18,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.17603397369384766,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "locks",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 400,
+        "seed": 11
+      }
+    },
+    {
+      "index": 19,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.2057337760925293,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "locks",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 400,
+        "seed": 12
+      }
+    },
+    {
+      "index": 20,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.19762372970581055,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "locks",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 200,
+        "seed": 11
+      }
+    },
+    {
+      "index": 21,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.20069575309753418,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "locks",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 200,
+        "seed": 12
+      }
+    },
+    {
+      "index": 22,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.19766497611999512,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "locks",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 400,
+        "seed": 11
+      }
+    },
+    {
+      "index": 23,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.17473816871643066,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "locks",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 400,
+        "seed": 12
+      }
+    },
+    {
+      "index": 24,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.19962382316589355,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "reduced_cost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 200,
+        "seed": 11
+      }
+    },
+    {
+      "index": 25,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.19995689392089844,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "reduced_cost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 200,
+        "seed": 12
+      }
+    },
+    {
+      "index": 26,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.19761991500854492,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "reduced_cost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 400,
+        "seed": 11
+      }
+    },
+    {
+      "index": 27,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.20065522193908691,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "reduced_cost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 400,
+        "seed": 12
+      }
+    },
+    {
+      "index": 28,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.13433027267456055,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "reduced_cost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 200,
+        "seed": 11
+      }
+    },
+    {
+      "index": 29,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.1337754726409912,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "reduced_cost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 200,
+        "seed": 12
+      }
+    },
+    {
+      "index": 30,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.20016765594482422,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "reduced_cost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 400,
+        "seed": 11
+      }
+    },
+    {
+      "index": 31,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.1997373104095459,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "reduced_cost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 400,
+        "seed": 12
+      }
+    },
+    {
+      "index": 32,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.1979379653930664,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "pseudocost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 200,
+        "seed": 11
+      }
+    },
+    {
+      "index": 33,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.17740345001220703,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "pseudocost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 200,
+        "seed": 12
+      }
+    },
+    {
+      "index": 34,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.17628717422485352,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "pseudocost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 400,
+        "seed": 11
+      }
+    },
+    {
+      "index": 35,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.19817662239074707,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "pseudocost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 400,
+        "seed": 12
+      }
+    },
+    {
+      "index": 36,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.19896459579467773,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "pseudocost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 200,
+        "seed": 11
+      }
+    },
+    {
+      "index": 37,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.1972670555114746,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "pseudocost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 200,
+        "seed": 12
+      }
+    },
+    {
+      "index": 38,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.1988511085510254,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "pseudocost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 400,
+        "seed": 11
+      }
+    },
+    {
+      "index": 39,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.1757369041442871,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "pseudocost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 400,
+        "seed": 12
+      }
+    },
+    {
+      "index": 40,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.19788455963134766,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "locks",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 200,
+        "seed": 11
+      }
+    },
+    {
+      "index": 41,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.20086193084716797,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "locks",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 200,
+        "seed": 12
+      }
+    },
+    {
+      "index": 42,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.19655656814575195,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "locks",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 400,
+        "seed": 11
+      }
+    },
+    {
+      "index": 43,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.2007291316986084,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "locks",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 400,
+        "seed": 12
+      }
+    },
+    {
+      "index": 44,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.1798381805419922,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "locks",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 200,
+        "seed": 11
+      }
+    },
+    {
+      "index": 45,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.19974184036254883,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "locks",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 200,
+        "seed": 12
+      }
+    },
+    {
+      "index": 46,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.20192575454711914,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "locks",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 400,
+        "seed": 11
+      }
+    },
+    {
+      "index": 47,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.19895076751708984,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "locks",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 400,
+        "seed": 12
+      }
+    }
+  ],
+  "top_candidate_summaries": [
+    {
+      "index": 0,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.5471024513244629,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "reduced_cost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 200,
+        "seed": 11
+      }
+    },
+    {
+      "index": 1,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.21096515655517578,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "reduced_cost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 200,
+        "seed": 12
+      }
+    },
+    {
+      "index": 2,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.20136094093322754,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "reduced_cost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 400,
+        "seed": 11
+      }
+    },
+    {
+      "index": 3,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.18738842010498047,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "reduced_cost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 400,
+        "seed": 12
+      }
+    },
+    {
+      "index": 4,
+      "method": "greedy",
+      "status": "no_solution",
+      "feasible": false,
+      "reported_objective": null,
+      "effective_objective": null,
+      "runtime_sec": 0.13299226760864258,
+      "incumbent_runtime_sec": null,
+      "incumbent_solution_count": null,
+      "incumbent_status_code": null,
+      "diagnostic_incumbent_obj": null,
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "reduced_cost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 200,
+        "seed": 11
+      }
+    }
+  ],
+  "candidates": [
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "reduced_cost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 200,
+        "seed": 11
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.5471024513244629,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.02006697654724121,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.028159141540527344,
+              "itercount": 0.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020012855529785156,
+              "itercount": 671.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.02006697654724121,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.057559967041015625
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "reduced_cost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 200,
+        "seed": 12
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.21096515655517578,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.09890913963317871,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020015954971313477,
+              "itercount": 232.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020014047622680664,
+              "itercount": 1035.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.09890913963317871,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.05269002914428711
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "reduced_cost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 400,
+        "seed": 11
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.20136094093322754,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08391499519348145,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020034074783325195,
+              "itercount": 252.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020022153854370117,
+              "itercount": 981.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08391499519348145,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.05928492546081543
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "reduced_cost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 400,
+        "seed": 12
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.18738842010498047,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.07584810256958008,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020190954208374023,
+              "itercount": 248.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020018815994262695,
+              "itercount": 1007.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.07584810256958008,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.05280900001525879
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "reduced_cost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 200,
+        "seed": 11
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.13299226760864258,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.02013397216796875,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020025968551635742,
+              "itercount": 224.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020025968551635742,
+              "itercount": 978.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.02013397216796875,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.0533599853515625
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "reduced_cost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 200,
+        "seed": 12
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.20060229301452637,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08839106559753418,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020084857940673828,
+              "itercount": 227.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020162105560302734,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08839106559753418,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.05276989936828613
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "reduced_cost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 400,
+        "seed": 11
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.19701409339904785,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08539581298828125,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.02002120018005371,
+              "itercount": 222.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020062923431396484,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08539581298828125,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.052412986755371094
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "reduced_cost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 400,
+        "seed": 12
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.19878673553466797,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08652687072753906,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020039081573486328,
+              "itercount": 223.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.02001500129699707,
+              "itercount": 991.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08652687072753906,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.053025007247924805
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "pseudocost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 200,
+        "seed": 11
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.18260717391967773,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.06322407722473145,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020039081573486328,
+              "itercount": 227.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020016908645629883,
+              "itercount": 980.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.06322407722473145,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.06029701232910156
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "pseudocost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 200,
+        "seed": 12
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.1977710723876953,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08637499809265137,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.02002692222595215,
+              "itercount": 224.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020029783248901367,
+              "itercount": 982.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08637499809265137,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.05244708061218262
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "pseudocost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 400,
+        "seed": 11
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.19758963584899902,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08584094047546387,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020025014877319336,
+              "itercount": 236.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020261049270629883,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08584094047546387,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.05238485336303711
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "pseudocost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 400,
+        "seed": 12
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.19678139686584473,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08546686172485352,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020019054412841797,
+              "itercount": 230.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020026206970214844,
+              "itercount": 982.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08546686172485352,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.052217960357666016
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "pseudocost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 200,
+        "seed": 11
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.17424488067626953,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.06262803077697754,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020022869110107422,
+              "itercount": 222.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020023822784423828,
+              "itercount": 981.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.06262803077697754,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.05237293243408203
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "pseudocost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 200,
+        "seed": 12
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.1317746639251709,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.02012014389038086,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020045042037963867,
+              "itercount": 231.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020161151885986328,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.02012014389038086,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.05235481262207031
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "pseudocost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 400,
+        "seed": 11
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.19845795631408691,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08647894859313965,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020022869110107422,
+              "itercount": 232.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020294904708862305,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08647894859313965,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.05251789093017578
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "pseudocost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 400,
+        "seed": 12
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.1762981414794922,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.06436896324157715,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020023822784423828,
+              "itercount": 226.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020038127899169922,
+              "itercount": 984.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.06436896324157715,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.05272197723388672
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "locks",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 200,
+        "seed": 11
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.19780993461608887,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08585500717163086,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.02002406120300293,
+              "itercount": 220.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.02002716064453125,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08585500717163086,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.052610158920288086
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "locks",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 200,
+        "seed": 12
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.196364164352417,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.0843510627746582,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.02002692222595215,
+              "itercount": 228.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020019054412841797,
+              "itercount": 980.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.0843510627746582,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.05280900001525879
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "locks",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 400,
+        "seed": 11
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.17603397369384766,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.064208984375,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020027875900268555,
+              "itercount": 229.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020096778869628906,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.064208984375,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.05254387855529785
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "locks",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 400,
+        "seed": 12
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.2057337760925293,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08922314643859863,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020042896270751953,
+              "itercount": 229.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020215988159179688,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08922314643859863,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.052288055419921875
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "locks",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 200,
+        "seed": 11
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.19762372970581055,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08536911010742188,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.02003312110900879,
+              "itercount": 226.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020032882690429688,
+              "itercount": 985.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08536911010742188,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.05306816101074219
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "locks",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 200,
+        "seed": 12
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.20069575309753418,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08785200119018555,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020055055618286133,
+              "itercount": 227.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020289897918701172,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08785200119018555,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.05325484275817871
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "locks",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 400,
+        "seed": 11
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.19766497611999512,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08494281768798828,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020047903060913086,
+              "itercount": 222.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.02003192901611328,
+              "itercount": 983.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08494281768798828,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.053465843200683594
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.1,
+        "score_mode": "locks",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 400,
+        "seed": 12
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.17473816871643066,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.062222957611083984,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020074844360351562,
+              "itercount": 227.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020090103149414062,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.062222957611083984,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.053143978118896484
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "reduced_cost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 200,
+        "seed": 11
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.19962382316589355,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08657217025756836,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.02002096176147461,
+              "itercount": 224.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020210981369018555,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08657217025756836,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.053652048110961914
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "reduced_cost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 200,
+        "seed": 12
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.19995689392089844,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08596396446228027,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.02023005485534668,
+              "itercount": 217.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.02020096778869629,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08596396446228027,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.05426502227783203
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "reduced_cost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 400,
+        "seed": 11
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.19761991500854492,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08596396446228027,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020083189010620117,
+              "itercount": 233.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020214080810546875,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08596396446228027,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.052525997161865234
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "reduced_cost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 400,
+        "seed": 12
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.20065522193908691,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08704090118408203,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.0200350284576416,
+              "itercount": 229.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.02002692222595215,
+              "itercount": 984.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08704090118408203,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.054592132568359375
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "reduced_cost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 200,
+        "seed": 11
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.13433027267456055,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.02013397216796875,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020026206970214844,
+              "itercount": 221.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.02042388916015625,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.02013397216796875,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.0539858341217041
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "reduced_cost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 200,
+        "seed": 12
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.1337754726409912,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.020116090774536133,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.02013111114501953,
+              "itercount": 217.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020333051681518555,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020116090774536133,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.053804874420166016
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "reduced_cost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 400,
+        "seed": 11
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.20016765594482422,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08756804466247559,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020033836364746094,
+              "itercount": 223.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020020008087158203,
+              "itercount": 1010.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08756804466247559,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.05346107482910156
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "reduced_cost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 400,
+        "seed": 12
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.1997373104095459,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08720207214355469,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020023107528686523,
+              "itercount": 223.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020284175872802734,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08720207214355469,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.052886962890625
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "pseudocost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 200,
+        "seed": 11
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.1979379653930664,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08567190170288086,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020056962966918945,
+              "itercount": 223.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020100116729736328,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08567190170288086,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.05299210548400879
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "pseudocost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 200,
+        "seed": 12
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.17740345001220703,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.06490397453308105,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.02003312110900879,
+              "itercount": 220.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020038843154907227,
+              "itercount": 982.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.06490397453308105,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.05315208435058594
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "pseudocost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 400,
+        "seed": 11
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.17628717422485352,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.06337785720825195,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020034074783325195,
+              "itercount": 223.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020227909088134766,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.06337785720825195,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.05311107635498047
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "pseudocost",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 400,
+        "seed": 12
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.19817662239074707,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.0860140323638916,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020021915435791016,
+              "itercount": 224.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020207881927490234,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.0860140323638916,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.05276298522949219
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "pseudocost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 200,
+        "seed": 11
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.19896459579467773,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08686494827270508,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020023107528686523,
+              "itercount": 227.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020014047622680664,
+              "itercount": 984.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08686494827270508,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.053018808364868164
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "pseudocost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 200,
+        "seed": 12
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.1972670555114746,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08469319343566895,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.02005290985107422,
+              "itercount": 222.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.0202639102935791,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08469319343566895,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.05297684669494629
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "pseudocost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 400,
+        "seed": 11
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.1988511085510254,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08600592613220215,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020030975341796875,
+              "itercount": 226.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020135879516601562,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08600592613220215,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.05325794219970703
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "pseudocost",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 400,
+        "seed": 12
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.1757369041442871,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.06363201141357422,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.02002406120300293,
+              "itercount": 218.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.02015995979309082,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.06363201141357422,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.052719831466674805
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "locks",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 200,
+        "seed": 11
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.19788455963134766,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08519697189331055,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020026206970214844,
+              "itercount": 226.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.02020716667175293,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08519697189331055,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.0529022216796875
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "locks",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 200,
+        "seed": 12
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.20086193084716797,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08864498138427734,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020047903060913086,
+              "itercount": 223.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020030975341796875,
+              "itercount": 981.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08864498138427734,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.052809953689575195
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "locks",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 400,
+        "seed": 11
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.19655656814575195,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08449792861938477,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.02002096176147461,
+              "itercount": 222.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020135879516601562,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08449792861938477,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.05279183387756348
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "locks",
+        "repair_mode": "round_then_repair",
+        "submip_nodes": 400,
+        "seed": 12
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.2007291316986084,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08837485313415527,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.02002406120300293,
+              "itercount": 218.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020040035247802734,
+              "itercount": 983.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08837485313415527,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.05293703079223633
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "locks",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 200,
+        "seed": 11
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.1798381805419922,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.06734108924865723,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020019054412841797,
+              "itercount": 224.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.02016592025756836,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.06734108924865723,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.053079843521118164
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "locks",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 200,
+        "seed": 12
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.19974184036254883,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08741903305053711,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020050048828125,
+              "itercount": 224.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.020051956176757812,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08741903305053711,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.05319809913635254
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "locks",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 400,
+        "seed": 11
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.20192575454711914,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08954000473022461,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020027875900268555,
+              "itercount": 226.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.02014303207397461,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08954000473022461,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.05323004722595215
+        }
+      }
+    },
+    {
+      "method": "greedy",
+      "params": {
+        "fix_ratio": 0.2,
+        "score_mode": "locks",
+        "repair_mode": "fractional_first",
+        "submip_nodes": 400,
+        "seed": 12
+      },
+      "status": "no_solution",
+      "feasible": false,
+      "objective": null,
+      "runtime_sec": 0.19895076751708984,
+      "incumbent": null,
+      "notes": [
+        "LP-guided greedy construction using reduced costs, objective coefficients, and lock counts.",
+        "Hands a rounded partial MIP start to a short capped Gurobi improvement phase."
+      ],
+      "diagnostics": {
+        "error": "No LP seed and no root seed",
+        "model": {
+          "model_name": "model",
+          "is_mip": 1,
+          "is_qp": 0,
+          "is_qcp": 0,
+          "num_vars": 2401,
+          "num_bin": 1600,
+          "num_int": 1600,
+          "num_constrs": 1990,
+          "num_qconstrs": 0,
+          "sense": 1
+        },
+        "lp_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "objbound": -Infinity,
+          "runtime": 0.08634090423583984,
+          "itercount": 0.0,
+          "baritercount": -1,
+          "nodecount": 0.0,
+          "method": 2,
+          "crossover": 0,
+          "dualreductions": 0,
+          "attempts": [
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": 0.0,
+              "runtime": 0.020027875900268555,
+              "itercount": 230.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 1,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.02015209197998047,
+              "itercount": 979.0,
+              "baritercount": 0,
+              "nodecount": 0.0,
+              "method": 0,
+              "crossover": null,
+              "dualreductions": 0
+            },
+            {
+              "status": 9,
+              "status_name": "TIME_LIMIT",
+              "solcount": 0,
+              "objbound": -Infinity,
+              "runtime": 0.08634090423583984,
+              "itercount": 0.0,
+              "baritercount": -1,
+              "nodecount": 0.0,
+              "method": 2,
+              "crossover": 0,
+              "dualreductions": 0
+            }
+          ]
+        },
+        "root_seed_meta": {
+          "status": 9,
+          "status_name": "TIME_LIMIT",
+          "solcount": 0,
+          "runtime": 0.053132057189941406
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "hostname": "clr1244",
+  "timestamp_utc": "2026-04-07T04:37:33Z"
+}

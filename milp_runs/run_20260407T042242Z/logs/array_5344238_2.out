@@ -1,0 +1,21 @@
+Task ID:            2
+Project root:       /nfs/home/nsheets1/MIP/MIPcc26
+Apptainer image:    /nfs/home/nsheets1/MIP/MIPcc26/gurobi.sif
+License file:       /nfs/home/nsheets1/MIP/gurobi.lic
+Instance:           tests/instance_03.original.mps
+Plan JSON:          /nfs/home/nsheets1/MIP/MIPcc26/milp_runs/run_20260407T042242Z/results/plan.json
+Results dir:        /nfs/home/nsheets1/MIP/MIPcc26/milp_runs/run_20260407T042242Z/results/farm_results
+Farm seconds total: 160
+Per-task budget:    10.0
+{
+  "task_id": 2,
+  "method": "rens",
+  "objective_sense": "min",
+  "status": "ok",
+  "num_candidates": 12,
+  "num_errors": 0,
+  "task_time_limit_sec": 10.0,
+  "per_candidate_time_limit_sec": 0.8333333333333334,
+  "best_objective": 618.5,
+  "out": "/nfs/home/nsheets1/MIP/MIPcc26/milp_runs/run_20260407T042242Z/results/farm_results/task_002.json"
+}
