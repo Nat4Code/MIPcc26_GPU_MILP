@@ -9,7 +9,7 @@ import time
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
-METHODS = ["greedy", "rens", "local_search_lp", "dive_fix"]
+METHODS = ["greedy", "rens", "local_search_lp", "dive_fix", "feasibility_pump", "rins_warmstart", "local_branching_hamming", "lns_fix_optimize", "objective_bound_search", "polishing_mip"]
 INTEGER_VTYPES = {"B", "I"}
 
 
@@ -546,6 +546,46 @@ def collect_solution(model) -> Optional[Dict[str, Any]]:
             out["bound"] = None
 
     return out
+
+
+def load_incumbent_values(payload: Optional[Dict[str, Any]]) -> Dict[str, float]:
+    if not isinstance(payload, dict):
+        return {}
+    inc = payload.get("incumbent") if isinstance(payload.get("incumbent"), dict) else None
+    values = None
+    if inc and isinstance(inc.get("values"), dict):
+        values = inc.get("values")
+    elif isinstance(payload.get("values"), dict):
+        values = payload.get("values")
+    if not isinstance(values, dict):
+        return {}
+    out: Dict[str, float] = {}
+    for k, v in values.items():
+        try:
+            out[str(k)] = float(v)
+        except Exception:
+            pass
+    return out
+
+
+def incumbent_from_features(features: Optional[Dict[str, Any]]) -> Tuple[Dict[str, float], Optional[float], Optional[str]]:
+    if not isinstance(features, dict):
+        return {}, None, None
+    vals = features.get("phase1_incumbent_values")
+    obj = features.get("phase1_incumbent_objective")
+    method = features.get("phase1_incumbent_method")
+    out: Dict[str, float] = {}
+    if isinstance(vals, dict):
+        for k, v in vals.items():
+            try:
+                out[str(k)] = float(v)
+            except Exception:
+                pass
+    try:
+        obj = None if obj is None else float(obj)
+    except Exception:
+        obj = None
+    return out, obj, method
 
 
 def make_result(method: str, params: Dict[str, Any], elapsed: float, feasible: bool,

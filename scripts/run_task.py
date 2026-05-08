@@ -1,230 +1,225 @@
 #!/usr/bin/env python3
+"""
+scripts/run_task.py
+
+Run exactly one planned heuristic shard.
+
+This replacement avoids the old behavior where one Slurm task expanded into a
+large internal grid and gave each candidate a tiny fraction of the time budget.
+
+It supports:
+  python3 -m scripts.run_task INSTANCE PLAN TASK_ID --out OUT --time-limit T
+  python3 -m scripts.run_task INSTANCE PLAN LOCAL_TASK_ID --phase phase1 --out OUT --time-limit T
+"""
+
+from __future__ import annotations
+
 import argparse
 import importlib
 import json
-import os
-import sys
+import math
 import time
 from pathlib import Path
-from typing import Any, Dict, Optional
-
-THIS_FILE = Path(__file__).resolve()
-PROJECT_ROOT = THIS_FILE.parent.parent
-if str(PROJECT_ROOT) not in sys.path:
-    sys.path.insert(0, str(PROJECT_ROOT))
+from typing import Any, Dict, List, Optional
 
 
 def load_json(path: str) -> Dict[str, Any]:
-    with open(path, "r") as f:
-        return json.load(f)
+    with open(path, "r", encoding="utf-8", errors="replace") as f:
+        obj = json.load(f)
+    return obj if isinstance(obj, dict) else {}
 
 
-def dump_json(obj: Dict[str, Any], path: str) -> None:
-    Path(path).parent.mkdir(parents=True, exist_ok=True)
-    with open(path, "w") as f:
-        json.dump(obj, f, indent=2, default=str)
+def safe_float(x: Any) -> Optional[float]:
+    if x is None or isinstance(x, bool):
+        return None
+    try:
+        y = float(x)
+    except Exception:
+        return None
+    if math.isnan(y) or math.isinf(y):
+        return None
+    return y
 
 
-def import_heuristic_runner(method: str):
-    module = importlib.import_module(f"heuristics.{method}")
-    if not hasattr(module, "run_heuristic"):
-        raise RuntimeError(f"heuristics.{method} does not define run_heuristic()")
-    return module.run_heuristic
+def extract_tasks(plan: Dict[str, Any], phase: Optional[str]) -> List[Dict[str, Any]]:
+    if phase:
+        key = f"{phase}_tasks"
+        if isinstance(plan.get(key), list):
+            return list(plan[key])
+        if isinstance(plan.get("tasks"), list):
+            return [t for t in plan["tasks"] if str(t.get("phase", "")).lower() == phase.lower()]
+        return []
+    if isinstance(plan.get("tasks"), list):
+        return list(plan["tasks"])
+    out = []
+    for key in ("phase1_tasks", "phase2_tasks"):
+        if isinstance(plan.get(key), list):
+            out.extend(plan[key])
+    return out
 
 
-def extract_candidate_objective(cand: Dict[str, Any]) -> Optional[float]:
-    # 1) direct top-level objective
-    obj = cand.get("objective")
-    if obj is not None:
-        try:
-            return float(obj)
-        except Exception:
-            pass
-
-    # 2) incumbent.objective
-    incumbent = cand.get("incumbent")
-    if isinstance(incumbent, dict):
-        obj = incumbent.get("objective")
-        if obj is not None:
-            try:
-                return float(obj)
-            except Exception:
-                pass
-
-    # 3) diagnostics.incumbent_obj
-    diagnostics = cand.get("diagnostics")
-    if isinstance(diagnostics, dict):
-        obj = diagnostics.get("incumbent_obj")
-        if obj is not None:
-            try:
-                return float(obj)
-            except Exception:
-                pass
-
+def obj_from_dict(d: Dict[str, Any]) -> Optional[float]:
+    for key in ("objective", "best_objective", "best_obj", "incumbent_obj", "obj"):
+        v = safe_float(d.get(key))
+        if v is not None:
+            return v
+    for key in ("incumbent", "solution", "best"):
+        sub = d.get(key)
+        if isinstance(sub, dict):
+            v = obj_from_dict(sub)
+            if v is not None:
+                return v
     return None
 
 
-def summarize_candidate(idx: int, cand: Dict[str, Any]) -> Dict[str, Any]:
-    diagnostics = cand.get("diagnostics") if isinstance(cand.get("diagnostics"), dict) else {}
-    incumbent = cand.get("incumbent") if isinstance(cand.get("incumbent"), dict) else {}
-
-    return {
-        "index": idx,
-        "method": cand.get("method"),
-        "status": cand.get("status"),
-        "feasible": cand.get("feasible"),
-        "reported_objective": cand.get("objective"),
-        "effective_objective": extract_candidate_objective(cand),
-        "runtime_sec": cand.get("runtime_sec"),
-        "incumbent_runtime_sec": incumbent.get("runtime_sec"),
-        "incumbent_solution_count": incumbent.get("solution_count"),
-        "incumbent_status_code": incumbent.get("status_code"),
-        "diagnostic_incumbent_obj": diagnostics.get("incumbent_obj"),
-        "params": cand.get("params"),
-    }
+def extract_incumbent(d: Dict[str, Any]) -> Optional[Dict[str, Any]]:
+    for key in ("incumbent", "solution", "best", "best_incumbent"):
+        sub = d.get(key)
+        if isinstance(sub, dict):
+            if "values" in sub or "objective" in sub:
+                return dict(sub)
+    if isinstance(d.get("repair"), dict) and isinstance(d["repair"].get("incumbent"), dict):
+        return dict(d["repair"]["incumbent"])
+    return None
 
 
-def objective_sort_key(summary: Dict[str, Any], sense: str):
-    obj = summary.get("effective_objective")
-    if obj is None:
-        return float("inf") if sense == "min" else float("-inf")
-    return obj
+def load_warmstart(path: Optional[str]) -> Optional[Dict[str, Any]]:
+    if not path:
+        return None
+    p = Path(path)
+    if not p.exists():
+        return None
+    d = load_json(str(p))
+    inc = extract_incumbent(d)
+    obj = obj_from_dict(d)
+    if inc is not None:
+        if "objective" not in inc and obj is not None:
+            inc["objective"] = obj
+        return inc
+    return None
 
 
-def main():
+def normalize_result(result: Dict[str, Any], task: Dict[str, Any], runtime: float, warmstart: Optional[Dict[str, Any]]) -> Dict[str, Any]:
+    if not isinstance(result, dict):
+        result = {}
+
+    method = task.get("method", result.get("method", "unknown"))
+    phase = task.get("phase", result.get("phase", "unknown"))
+    params = task.get("params", {})
+
+    inc = extract_incumbent(result)
+    obj = obj_from_dict(result)
+    found = bool(result.get("found", result.get("found_incumbent", inc is not None or obj is not None)))
+
+    # Preserve incumbent if method returns one.
+    if inc is not None and obj is None:
+        obj = obj_from_dict(inc)
+    if inc is not None and "objective" not in inc and obj is not None:
+        inc["objective"] = obj
+
+    # If phase2 method failed but a warmstart was supplied, emit the warmstart as
+    # the candidate. This prevents phase2 from erasing the incumbent path.
+    if not found and warmstart is not None:
+        inc = dict(warmstart)
+        obj = obj_from_dict(inc)
+        found = obj is not None
+        result.setdefault("notes", [])
+        if isinstance(result["notes"], list):
+            result["notes"].append("Method did not improve; carrying warmstart incumbent forward.")
+
+    out = dict(result)
+    out.update({
+        "task_id": task.get("task_id"),
+        "phase_task_id": task.get("phase_task_id", task.get("local_task_id")),
+        "phase": phase,
+        "method": method,
+        "params": params,
+        "runtime": result.get("runtime", runtime),
+        "runtime_sec": result.get("runtime_sec", runtime),
+        "found": bool(found),
+        "found_incumbent": bool(found),
+        "objective": obj,
+        "best_obj": obj,
+        "incumbent_obj": obj,
+        "incumbent": inc,
+        "solution": inc,
+        "warmstart_loaded": warmstart is not None,
+        "run_task_note": "one planned shard received the full task time limit",
+    })
+    return out
+
+
+def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("instance_path")
     ap.add_argument("plan_json")
     ap.add_argument("task_id", type=int)
-    ap.add_argument("--out", default=None)
-    ap.add_argument("--time-limit", type=float, default=None)
+    ap.add_argument("--phase", default=None, choices=["phase1", "phase2"])
+    ap.add_argument("--out", required=True)
+    ap.add_argument("--time-limit", type=float, default=30.0)
+    ap.add_argument("--threads", type=int, default=None)
+    ap.add_argument("--warmstart-json", default=None)
     args = ap.parse_args()
 
-    plan = load_json(args.plan_json)
-    tasks = plan.get("tasks", [])
-    if args.task_id < 0 or args.task_id >= len(tasks):
-        raise SystemExit(f"task_id {args.task_id} out of range; plan has {len(tasks)} tasks")
-
-    task = tasks[args.task_id]
-    method = task["method"]
-    params_list = task.get("params_list", [])
-    global_cfg = plan.get("global", {})
-    features = plan.get("features", {})
-
-    instance_path = args.instance_path or plan.get("instance_path")
-    if not instance_path:
-        raise SystemExit("No instance path provided")
-
-    task_time_limit = args.time_limit
-    if task_time_limit is None:
-        task_time_limit = float(global_cfg.get("time_limit_sec", 5.0))
-
-    sense = str(plan.get("objective_sense", "min")).lower()
-    if sense not in {"min", "max"}:
-        sense = "min"
-
-    runner = import_heuristic_runner(method)
-
     t0 = time.time()
-    candidates = []
-    errors = []
+    plan = load_json(args.plan_json)
+    tasks = extract_tasks(plan, args.phase)
 
-    # Honest-ish shard budgeting:
-    # split the task budget across the parameter points in this shard.
-    # Keep a tiny floor so very fine shards are still runnable.
-    per_candidate_time = max(0.05, float(task_time_limit) / max(1, len(params_list)))
+    if args.task_id < 0 or args.task_id >= len(tasks):
+        raise SystemExit(f"task_id {args.task_id} out of range for phase={args.phase}; num_tasks={len(tasks)}")
 
-    for i, params in enumerate(params_list):
-        try:
-            out = runner(instance_path, params, per_candidate_time, features=features)
-            if not isinstance(out, dict):
-                raise RuntimeError(f"heuristic returned non-dict result for shard candidate {i}")
+    task = dict(tasks[args.task_id])
+    params = dict(task.get("params") or {})
+    task["params"] = params
 
-            # Normalize the top-level objective so downstream code sees the best value consistently.
-            eff_obj = extract_candidate_objective(out)
-            if eff_obj is not None:
-                out["objective"] = eff_obj
+    threads = args.threads
+    if threads is None:
+        threads = int(task.get("threads_per_task", params.get("threads", params.get("mip_threads", 1))))
 
-            candidates.append(out)
+    params.setdefault("threads", threads)
+    params.setdefault("mip_threads", threads)
+    params.setdefault("lp_threads", threads)
 
-        except Exception as exc:
-            errors.append({
-                "index": i,
-                "params": params,
-                "error": repr(exc),
-            })
+    warmstart = load_warmstart(args.warmstart_json)
+    if warmstart is not None:
+        params["warmstart_incumbent"] = warmstart
+        params["warmstart_values"] = warmstart.get("values", {})
+        params["warmstart_objective"] = obj_from_dict(warmstart)
 
-    best = None
-    best_obj = None
+    method = str(task.get("method"))
+    module = importlib.import_module(f"heuristics.{method}")
 
-    for cand in candidates:
-        if not cand.get("feasible", False):
-            continue
+    if not hasattr(module, "run_heuristic"):
+        raise SystemExit(f"heuristics.{method} has no run_heuristic(...)")
 
-        obj = extract_candidate_objective(cand)
-        if obj is None:
-            continue
-
-        if best is None:
-            best = cand
-            best_obj = obj
-        else:
-            if (sense == "min" and obj < best_obj) or (sense == "max" and obj > best_obj):
-                best = cand
-                best_obj = obj
-
-    candidate_summaries = [summarize_candidate(i, cand) for i, cand in enumerate(candidates)]
-    candidate_summaries_sorted = sorted(
-        candidate_summaries,
-        key=lambda s: objective_sort_key(s, sense),
-        reverse=(sense == "max"),
+    result = module.run_heuristic(
+        args.instance_path,
+        params,
+        float(args.time_limit),
+        features=plan,
     )
 
-    result = {
-        "task_id": int(args.task_id),
-        "method": method,
-        "method_task_index": task.get("method_task_index"),
-        "num_method_tasks": task.get("num_method_tasks"),
-        "grid_size_total": task.get("grid_size_total"),
-        "grid_size_local": task.get("grid_size_local"),
-        "instance_path": instance_path,
-        "objective_sense": sense,
-        "task_time_limit_sec": float(task_time_limit),
-        "per_candidate_time_limit_sec": float(per_candidate_time),
-        "status": "ok" if candidates else "error",
-        "elapsed_sec": time.time() - t0,
-        "num_candidates": len(candidates),
-        "num_errors": len(errors),
-        "best_effective_objective": best_obj,
-        "best_candidate": best,
-        "candidate_summaries": candidate_summaries_sorted,
-        "top_candidate_summaries": candidate_summaries_sorted[:5],
-        "candidates": candidates,
-        "errors": errors,
-        "hostname": os.uname().nodename if hasattr(os, "uname") else "unknown",
-        "timestamp_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
-    }
+    runtime = time.time() - t0
+    out = normalize_result(result, task, runtime, warmstart)
 
-    out_path = args.out
-    if out_path is None:
-        output_dir = global_cfg.get("output_dir", "results")
-        out_path = os.path.join(output_dir, f"task_{args.task_id:03d}.json")
-
-    dump_json(result, out_path)
+    p = Path(args.out)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    with p.open("w", encoding="utf-8") as f:
+        json.dump(out, f, indent=2, allow_nan=False)
 
     print(json.dumps({
-        "task_id": result["task_id"],
-        "method": result["method"],
-        "objective_sense": result["objective_sense"],
-        "status": result["status"],
-        "num_candidates": result["num_candidates"],
-        "num_errors": result["num_errors"],
-        "task_time_limit_sec": result["task_time_limit_sec"],
-        "per_candidate_time_limit_sec": result["per_candidate_time_limit_sec"],
-        "best_objective": best_obj,
-        "out": out_path,
+        "out": str(p),
+        "task_id": task.get("task_id"),
+        "phase_task_id": task.get("phase_task_id", task.get("local_task_id")),
+        "phase": task.get("phase"),
+        "method": method,
+        "time_limit_sec": float(args.time_limit),
+        "threads": threads,
+        "warmstart_loaded": warmstart is not None,
+        "found": out.get("found"),
+        "objective": out.get("objective"),
+        "runtime": out.get("runtime"),
     }, indent=2))
-
     return 0
 
 

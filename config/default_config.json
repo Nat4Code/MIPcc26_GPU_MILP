@@ -9,11 +9,13 @@
   },
   "allocation": {
     "total_tasks": 16,
+    "phase1_share": 0.5,
     "default_split": {
-      "greedy": 4,
-      "rens": 4,
-      "local_search_lp": 4,
-      "dive_fix": 4
+      "greedy": 3,
+      "rens": 3,
+      "local_search_lp": 3,
+      "dive_fix": 3,
+      "feasibility_pump": 4
     },
     "rules": {
       "high_binary_ratio_threshold": 0.45,
@@ -23,31 +25,64 @@
   },
   "grids": {
     "greedy": {
-      "fix_ratio": [0.10, 0.20],
-      "score_mode": ["reduced_cost", "pseudocost", "locks"],
-      "repair_mode": ["round_then_repair", "fractional_first"],
-      "submip_nodes": [200, 400],
+      "w_fractionality": [1.0],
+      "w_reduced_cost": [0.2, 0.35],
+      "w_objective": [0.1, 0.2],
+      "w_locks": [0.05, 0.1],
+      "submip_nodes": [300, 600],
       "seed": [11, 12]
     },
     "rens": {
-      "lp_neighborhood_radius": [0.01, 0.03, 0.05],
-      "int_tol": [1e-06, 1e-05],
-      "submip_nodes": [200, 400],
-      "general_int_band": [1],
+      "integral_tolerance": [0.05, 0.10],
+      "free_radius": [16, 32, 64],
+      "restrict_band": [0.2, 1.0],
+      "submip_nodes": [400, 800],
       "seed": [21, 22]
     },
     "local_search_lp": {
+      "neighborhood": ["local_branching", "fix_top"],
       "neighborhood_size": [16, 32, 64],
-      "move_policy": ["1flip", "2flip", "ruin_recreate"],
-      "submip_nodes": [250, 500],
+      "move_policy": ["hybrid", "fractionality", "objective"],
+      "submip_nodes": [500, 1000],
       "seed": [31, 32]
     },
     "dive_fix": {
-      "branch_score": ["fractionality", "reduced_cost", "inference"],
+      "branch_score": ["fractionality", "reduced_cost", "objective", "hybrid"],
       "fix_batch_size": [8, 16, 24],
       "backtrack_depth": [1, 2],
-      "submip_nodes": [200, 400],
+      "submip_nodes": [300, 600],
       "seed": [41, 42]
+    },
+    "feasibility_pump": {
+      "seed": [51, 52, 53, 54],
+      "restarts": [2, 3],
+      "pump_passes": [8, 12]
+    },
+    "rins_warmstart": {
+      "seed": [61, 62, 63],
+      "rins": [30, 50],
+      "submip_nodes": [1200, 2400]
+    },
+    "local_branching_hamming": {
+      "seed": [71, 72],
+      "k": [8, 16, 32],
+      "submip_nodes": [1500, 2500]
+    },
+    "lns_fix_optimize": {
+      "seed": [81, 82],
+      "block_size": [24, 48, 96],
+      "block_id": [0, 1, 2, 3, 4, 5, 6, 7],
+      "submip_nodes": [1500, 2500]
+    },
+    "objective_bound_search": {
+      "seed": [91, 92],
+      "improvement": [0.0001, 0.001, 0.01],
+      "submip_nodes": [1200, 2400]
+    },
+    "polishing_mip": {
+      "seed": [101, 102, 103],
+      "rins": [30, 50],
+      "submip_nodes": [800, 1600]
     }
   }
 }

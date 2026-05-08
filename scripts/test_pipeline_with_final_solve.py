@@ -7,13 +7,28 @@ from pathlib import Path
 
 
 def run(cmd):
-    print("[run]", " ".join(cmd), flush=True)
-    subprocess.run(cmd, check=True)
+    print("[run]", " ".join(map(str, cmd)), flush=True)
+    subprocess.run(list(map(str, cmd)), check=True)
 
 
 def load_json(path):
     with open(path, "r") as f:
         return json.load(f)
+
+
+def task_ids(plan, phase):
+    return [int(t["task_id"]) for t in plan.get("tasks", []) if str(t.get("phase", "phase1")) == phase]
+
+
+def run_wave(instance_path, plan_json, ids, results_dir, log_dir, per_task_time, warmstart_json=None):
+    Path(results_dir).mkdir(parents=True, exist_ok=True)
+    Path(log_dir).mkdir(parents=True, exist_ok=True)
+    for task_id in ids:
+        out_file = Path(results_dir) / f"task_{task_id:03d}.json"
+        cmd = [sys.executable, "scripts/run_task.py", instance_path, str(plan_json), str(task_id), "--out", str(out_file), "--time-limit", str(per_task_time)]
+        if warmstart_json:
+            cmd.extend(["--warmstart-json", str(warmstart_json)])
+        run(cmd)
 
 
 def main():
@@ -28,98 +43,41 @@ def main():
 
     work = Path(args.work_dir)
     work.mkdir(parents=True, exist_ok=True)
-
     features_json = work / "features.json"
     plan_json = work / "plan.json"
-    results_dir = work / "farm_results"
+    phase1_dir = work / "phase1_results"
+    phase2_dir = work / "phase2_results"
+    merged_phase1_json = work / "merged_phase1.json"
+    merged_phase2_json = work / "merged_phase2.json"
     merged_json = work / "merged.json"
     final_json = work / "final_gurobi.json"
 
-    results_dir.mkdir(parents=True, exist_ok=True)
-
-    # Match CURRENT CLI:
-    # feature_extract.py <instance.mps> <features.json>
-    run([
-        sys.executable,
-        "scripts/feature_extract.py",
-        args.instance_path,
-        str(features_json),
-    ])
-
-    # Match CURRENT CLI:
-    # make_plan.py <config.json> <features.json> <instance.mps> <plan.json>
-    run([
-        sys.executable,
-        "scripts/make_plan.py",
-        args.config_path,
-        str(features_json),
-        args.instance_path,
-        str(plan_json),
-    ])
+    run([sys.executable, "scripts/feature_extract.py", args.instance_path, str(features_json)])
+    run([sys.executable, "scripts/make_plan.py", args.config_path, str(features_json), args.instance_path, str(plan_json)])
 
     plan = load_json(plan_json)
-    tasks = plan["tasks"]
-    per_task_time = max(0.25, float(args.farm_seconds) / max(1, len(tasks)))
+    phase1_ids = task_ids(plan, "phase1")
+    phase2_ids = task_ids(plan, "phase2")
+    p1_time = max(0.25, float(args.farm_seconds) / max(1, len(phase1_ids)))
+    p2_time = max(0.25, float(args.farm_seconds) / max(1, len(phase2_ids)))
 
-    # This assumes your patched run_task.py supports:
-    # run_task.py <instance_path> <plan_json> <task_id> --out <out.json> --time-limit <sec>
-    #
-    # If your local run_task.py still uses the OLD placeholder interface,
-    # then this will be the next place that fails, and we should patch that file next.
-    for task in tasks:
-        task_id = int(task["task_id"])
-        out_file = results_dir / f"task_{task_id:03d}.json"
-        run([
-            sys.executable,
-            "scripts/run_task.py",
-            args.instance_path,
-            str(plan_json),
-            str(task_id),
-            "--out",
-            str(out_file),
-            "--time-limit",
-            str(per_task_time),
-        ])
+    run_wave(args.instance_path, plan_json, phase1_ids, phase1_dir, work / "logs_phase1", p1_time)
+    run([sys.executable, "scripts/merge_results.py", str(phase1_dir), "--out", str(merged_phase1_json)])
 
-    # Match CURRENT CLI:
-    # merge_results.py <results_dir> <summary.json>
-    run([
-        sys.executable,
-        "scripts/merge_results.py",
-        str(results_dir),
-        "--out",
-        str(merged_json),
-    ])
+    if phase2_ids:
+        run_wave(args.instance_path, plan_json, phase2_ids, phase2_dir, work / "logs_phase2", p2_time, merged_phase1_json)
+        run([sys.executable, "scripts/merge_results.py", str(phase2_dir), "--out", str(merged_phase2_json)])
+    else:
+        merged_phase2_json.write_text(json.dumps({"status": "ok", "num_task_files": 0, "all_results": []}, indent=2))
 
-    # final_gurobi_solve.py uses argparse-style flags from the version I gave you.
-    run([
-        sys.executable,
-        "scripts/final_gurobi_solve.py",
-        args.instance_path,
-        str(merged_json),
-        "--out",
-        str(final_json),
-        "--time-limit",
-        str(args.final_seconds),
-        "--threads",
-        str(args.threads),
-        "--seed",
-        "0",
-        "--mip-focus",
-        "1",
-        "--heuristics",
-        "0.05",
-        "--start-node-limit",
-        "500",
-        "--start-time-limit",
-        "2.0",
-        "--log-to-console",
-    ])
+    run([sys.executable, "scripts/merge_results.py", str(phase1_dir), str(phase2_dir), "--out", str(merged_json)])
+    run([sys.executable, "scripts/final_gurobi_solve.py", args.instance_path, str(merged_json), "--out", str(final_json), "--time-limit", str(args.final_seconds), "--threads", str(args.threads), "--seed", "0", "--mip-focus", "1", "--heuristics", "0.05", "--start-node-limit", "500", "--start-time-limit", "2.0", "--log-to-console"])
 
     print("\nDone.")
     print(f"Features:      {features_json}")
     print(f"Plan:          {plan_json}")
-    print(f"Farm results:  {results_dir}")
+    print(f"Phase1 merge:  {merged_phase1_json}")
+    print(f"Phase2 merge:  {merged_phase2_json}")
     print(f"Merged:        {merged_json}")
     print(f"Final solve:   {final_json}")
 

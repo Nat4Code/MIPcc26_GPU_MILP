@@ -1,2 +1,13 @@
 *.sif
 gurobi.sif
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local build products and generated solve output.
+baseline
+*.log
+milp_runs/
+results/test_run/
+results/benchmarking/
+results/benchmarking_raw/
